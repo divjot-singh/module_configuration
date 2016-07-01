@@ -27,10 +27,12 @@
                         controller: 'RouteController'
                     }).
                     when('/route3/:param',{
-                    	templateUrl:'templates/firstroute.html'
+                    	templateUrl:'templates/q2r3.html',
+                        controller:'RouteController'
                     }).
                     when('/route4/:param',{
-                    	templateUrl:'templates/q2r4.html'
+                    	templateUrl:'templates/q2r4.html',
+                        controller:'RouteController'
                     }).
                     otherwise({
                         redirectTo: '/',
@@ -48,16 +50,7 @@
     })
 	</script>
 	<style type="text/css">	
-		a
-		{
-			text-decoration: none;
-			color:white;
-		}
-		a:hover
-		{
-			text-decoration: none;
-			color: white;
-		}
+		
 		.btn:hover
 		{
 			background-color:green; 
@@ -70,10 +63,10 @@
 </head>
 <body ng-app="App" container>
 <ol >
-	<li class="btn btn-primary" id="r1"><a href="#/route1/param1">Route 1</a></li>
-	<li class="btn btn-primary" id="r2"><a href="#/route2/param2">Route 2</a></li>
-	<li class="btn btn-primary" id="r1"><a href="#/route3/param3">Route 3</a></li>
-	<li class="btn btn-primary" id="r2"><a href="#/route4/param4">Route 4</a></li>
+	<li><a href="#/route1/param1">Route 1</a></li>
+	<li><a href="#/route2/param2">Route 2</a></li>
+	<li><a href="#/route3/param3">Route 3</a></li>
+	<li><a href="#/route4/param4">Route 4</a></li>
 </ol>
 <div ng-view></div>
 </body>

@@ -42,16 +42,7 @@
     })
 	</script>
 	<style type="text/css">	
-		a
-		{
-			text-decoration: none;
-			color:white;
-		}
-		a:hover
-		{
-			text-decoration: none;
-			color: white;
-		}
+		
 		.btn:hover
 		{
 			background-color:green; 
@@ -64,8 +55,8 @@
 </head>
 <body ng-app="App" container>
 <ol >
-	<li class="btn btn-primary" id="r1"><a href="#/route1/1234">Route 1</a></li>
-	<li class="btn btn-primary" id="r2"><a href="#/route2/abcd">Route 2</a></li>
+	<li><a href="#/route1/param1">Route 1</a></li>
+	<li><a href="#/route2/param2">Route 2</a></li>
 </ol>
 <div ng-view></div>
 </body>
