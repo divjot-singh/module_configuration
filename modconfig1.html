@@ -18,15 +18,15 @@
     module.config(['$routeProvider',
         function($routeProvider) {
             $routeProvider.
-                    when('/route1/:param', {
+                    when('/route1/:param', { //Route 1
                         templateUrl: 'templates/firstroute.html',
                         controller: 'RouteController'
                     }).
-                    when('/route2/:param', {
+                    when('/route2/:param', { //Route 2
                         templateUrl: 'templates/secondroute.html',
                         controller: 'RouteController'
                     }).
-                    otherwise({
+                    otherwise({ //Default Route
                         redirectTo: '/',
                         templateUrl:'templates/index.html',
                         controller:'IndexController'
